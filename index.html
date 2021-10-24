@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <style>
+        body{
+            background-color: darkcyan;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 5%;
+            background-image:url("https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .bt{
+             text-align: center;
+            margin-right: 25%;
+        }
+        .main{
+            background-color: rgb(13, 13, 26);
+            width: 30%;
+            padding: 5% 0%;
+            opacity: 0.8;
+            padding-left: 10%;
+        }
+        
+        
+    </style>
+</head> 
+<body>
+<div class="main">
+
+    <form method="POST">
+
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Good Name?" name="fullname" />
+        </div>
+        <br> 
+
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" required id="email" name="password"/>
+        </div>
+        <br>
+
+        <div>
+            <label>Contact</label>
+            <input type="number" name="contact"/>
+        </div>
+        <br>
+
+        <div>
+            <label>Gender</label>
+            <label>Male</label>
+            <input type="radio" name ="gender" value="M"/>
+            <label>Female</label>
+            <input type="radio" name ="gender" value="F"/>
+        </div>
+        <br>
+
+        <div>
+
+            <label>Dining/Takeaway</label>
+            <Select name="course">
+                <option value = "a">Dining</option>
+                <option value = "b">Take Away</option>
+            </Select>
+            
+
+        </div>
+        <br>
+
+        <div>
+            <label>Password</label>
+            <input type="password" name="password"/>
+        </div>
+        <br>
+
+        <div>
+            <input type="checkbox" id="tnc" name="tnc"/>
+            <label for="tnc">Yes, I do accept the T & C</label>
+        </div>
+        <br>
+
+        <div class="bt">
+
+            <button>Submit</button>
+        </div>
+
+    </form>
+</div>
+</body>
+</html>
